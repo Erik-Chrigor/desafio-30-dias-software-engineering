@@ -1,1 +1,2 @@
-# Meu Desafio de 30 Dias
+# Dia 2> Aprendendo Conflitos
+Testando o comando stash
