@@ -1,1 +1,1 @@
-# Meu Desafio de 30 Dias
+# Dia 2: Dominando o Git
