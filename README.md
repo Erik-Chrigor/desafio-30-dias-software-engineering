@@ -1,5 +1,7 @@
-HEAD
 # Desafio 30 Dias de Software Engineering
+
+![Status do Desafio](https://img.shields.io/badge/Progresso-Dia%2003-blue?style=for-the-badge&logo=git)
+
 > Status: Em Progresso. . .
 
 ## Descrição:
