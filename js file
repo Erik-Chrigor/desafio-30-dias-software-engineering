@@ -1,0 +1,74 @@
+//1. Capturando os elementos. 'Sempre' usamos o getElementById para pegar os elemntos pelo id usar aqui. Usamos ID por ser somente um para cada.
+//  const inputDecimal = document.getElementById('numeroDecimal')
+//  const botao = document.getElementById('btnConverter')
+//  const textoResultado = document.getElementById('resultado')
+
+//2. "Escutando o clique"
+//  botao.addEventListener('click', function() {
+
+    //Pegamos o valor do input
+   //   let decimal = Number(inputDecimal.value);
+
+    //3. Executando a lógica base
+    //O método .toString(2) é a função nativa do JS que faz a aritimética computacional que estou estudando.
+    //Posso converter para Hexadecimal usando o .toString(16) e Octal com .toString(8)
+  //    let binario = decimal.toString(2);
+    
+    //Devolvendo para a tela
+  //    textoResultado.innerText = `O número ${decimal} em binário é: ${binario}`;
+  //    console.log("Conversão realizada com sucesso!");
+
+//  });
+
+// ----------
+const inputDecimal = document.getElementById('numeroDecimal')
+const baseSelecionada = document.getElementById('escolhaBase')
+const botao = document.getElementById('btnConverter')
+const textoResultado = document.getElementById('resultado');
+
+botao.addEventListener('click', function() {
+    let decimal = Number(inputDecimal.value);
+
+    //Pegamos qual base o usuário escolheu (2, 8 ou 16)
+    let base = Number(baseSelecionada.value);
+     
+    // A mágica: o toString usa a variável "base" para decidir o cálculo
+    let convertido = decimal.toString(base).toUpperCase(); //toUpperCase deixa o Hexa bonitão (A,B,C...)
+
+    //Ajustando o nome da base para o texto
+    let nomeBase = base === 2 ? "binário" : base === 16 ? "Hexadecimal" : "Octal";
+
+    textoResultado.innerText = `${decimal} em ${nomeBase} é: ${convertido}`;
+
+
+});
+
+
+//Capturando os novos elementos
+
+const inputMassa = document.getElementById('massa-c');
+const inputVel = document.getElementById('vel-c');
+const btnFisica = document.getElementById('btnCalcularC');
+const resFisica = document.getElementById('res-cinetica');
+
+
+
+
+//Lógica de Energia Cinética
+
+btnFisica.addEventListener('click', function() {
+  let m = Number(inputMassa.value);
+  let v = Number(inputVel.value);
+
+ 
+  //Cálculo: Massa vezes velocidade ao quadrado, tudo dividido por 2
+
+  let energia = (m * (v ** 2)) / 2;
+
+  resFisica.innerText = `A Energia Cinética é ${energia.toFixed(2)} Joules`;
+  
+
+
+
+});
+///

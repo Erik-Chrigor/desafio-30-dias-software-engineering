@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Conversor de Bases</h1>
+        <input type="number" id="numeroDecimal" placeholder="Digite um número">
+
+        <!-- Menu de escolha-->
+         <select name="" id="escolhaBase">
+            <option value="2">Binário</option>
+            <option value="16">Hexadecimal</option>
+            <option value="8">Octal</option>
+         </select>
+         <button id="btnConverter">Converter</button>
+         <p id="resultado">Resultado aparecerá aqui.</p>
+    </div>
+
+    <!-- Minha primeira div end's here-->
+
+
+    <!--Minha nova div com o novo container para a energia cinética-->
+
+    <div class="container">
+        <h1>Energia Cinética</h1>
+
+        <div class="input-group">
+            <label>Massa (kg):</label>
+            <input type="number" name="" id="massa-c" placeholder="Ex: 80">
+        </div>
+
+        <div class="input-group">
+            <label for="">Velocidade (m/s):</label>
+            <input type="number" name="" id="vel-c" placeholder="Ex: 10">
+        </div>
+
+        <button id="btnCalcularC">Calcular Energia</button>
+        <p id="res-cinetica">Aguardando dados. . .</p>
+
+    </div>
+
+
+    <div class="container">
+        <h1>Energia Potencial</h1>
+
+        <div class="input-group">
+            <label for="">Massa (kg)</label>
+            <input type="number" id="massa-p" placeholder="Ex: 50">
+        </div>
+
+        <div class="input-group">
+            <label for="">Altura (m)</label>
+            <input type="number" id="altura-p" placeholder="10">
+        </div>
+
+        <button id="btnCalcularP">Calcular Energia</button>
+        <p id="res-potencial">Aguardando dados...</p>
+    </div>
+
+<script src="/index.js"></script>
+</body>
+</html>
