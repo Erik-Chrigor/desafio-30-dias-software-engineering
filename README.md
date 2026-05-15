@@ -5,7 +5,7 @@
 > Status: Em Progresso. . .
 
 ## Descrição:
-Repositório para documentar o aprendizado diário de Git, Lógica e Engenharia.
+Repositório para documentar o aprendizado diário de Git, Lógica, Engenharia e Física.
 
 ## Tecnologias e Ferramentas:
 * **Git** (Versionamento)
